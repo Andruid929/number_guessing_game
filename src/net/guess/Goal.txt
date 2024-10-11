@@ -1,0 +1,7 @@
+Create a program that generates a random number and has the
+user guess what the number is, and each time the user misses it,
+tells the user how close they were to the number until eventually
+the number is got right.
+
+"Technologies" required: Java programming, Random class (java.util)
+                         a lot of IF statements/switches...
