@@ -35,12 +35,15 @@ public class Start extends RNG {
 
         System.out.println("\nShall we go again?");
 
-        if (SCANNER.next().equalsIgnoreCase("yes")) {
+        String response = SCANNER.next();
+
+        if (response.equalsIgnoreCase("yes")) {
             System.out.print("\n");
             c = 10; //Reset the chances
             main();
-        } else if (SCANNER.next().equalsIgnoreCase("no")) {
-            System.out.println("Good bye.");
+        }
+        else if (response.equalsIgnoreCase("no")) {
+            System.out.println("\nGood bye.");
         }
     }
 
@@ -48,7 +51,7 @@ public class Start extends RNG {
         if (guess - number <= 3 && guess - number > 0 || number - guess <= 3 && number - guess > 0) {
             return "Warm";
         }
-        if (guess - number > 3 && guess - number <= 7 || number - guess > 3 && number <= 7) {
+        if (guess - number > 3 && guess - number <= 7 || number - guess > 3 && number - guess <= 7) {
             return "Cold";
         }
 
